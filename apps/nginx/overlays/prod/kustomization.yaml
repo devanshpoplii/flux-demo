@@ -1,0 +1,13 @@
+resources:
+- ../../base
+
+namespace: production
+
+replicas:
+- name: nginx
+  count: 10
+
+images:
+- name: nginx
+  newTag: "1.28"
+
